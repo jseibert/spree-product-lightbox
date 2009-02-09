@@ -18,6 +18,4 @@
 #lightbox-secNav-btnClose { width: 66px; float: right; padding-bottom: 0.7em; }
 div#gallery ul { list-style: none; }
 div#gallery ul li { display: inline; }
-div#gallery ul img { border: 2px solid #FFFFFF; }
-div#gallery ul a:hover img { border: 2px solid #3e3e3e; color: #3e3d3e; }
-div#gallery ul a:hover { color: #FFFFFF; }
+div#gallery ul li a img { width: 50px; height: 50px; }

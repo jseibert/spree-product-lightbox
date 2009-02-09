@@ -14,7 +14,7 @@ $(function() {
 		<% product.images.each do |i| -%>
 		<li>
 			<a href="/assets/products/<%= i.id %>/product/<%= i.attachment_file_name %>" title="<%= product.name %>">
-				<img src="/assets/products/<%= i.id %>/product/<%= i.attachment_file_name %>" height="50" width="50" />
+				<%= image_tag(i.attachment.url)%>
 			</a>
 		</li>
 		<% end -%>
