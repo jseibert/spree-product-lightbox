@@ -13,7 +13,7 @@ $(function() {
 	<ul>
 		<% product.images.each do |i| -%>
 		<li>
-			<a href="/assets/products/<%= i.id %>/product/<%= i.attachment_file_name %>" title="<%= product.name %>">
+			<a href="/assets/products/<%= i.id %>/original/<%= i.attachment_file_name %>" title="<%= product.name %>">
 				<%= image_tag(i.attachment.url)%>
 			</a>
 		</li>
