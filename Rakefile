@@ -99,7 +99,7 @@ namespace :spec do
   end
 end
 
-desc 'Generate documentation for the variant_lightbox extension.'
+desc 'Generate documentation for the product_lightbox extension.'
 Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title    = 'ProductLightboxExtension'
@@ -109,7 +109,7 @@ Rake::RDocTask.new(:rdoc) do |rdoc|
 end
 
 # For extensions that are in transition
-desc 'Test the variant_lightbox extension.'
+desc 'Test the product_lightbox extension.'
 Rake::TestTask.new(:test) do |t|
   t.libs << 'lib'
   t.pattern = 'test/**/*_test.rb'

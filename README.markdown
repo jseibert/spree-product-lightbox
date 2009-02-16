@@ -1,3 +1,3 @@
 = Product Lightbox
 
-Description goes here
+Lightbox for spree product images.
