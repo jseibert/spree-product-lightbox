@@ -1,0 +1,21 @@
+<% content_for :head do -%>
+<%= javascript_include_tag 'jquery.lightbox.js' %>
+<%= stylesheet_link_tag 'lightbox.css' %>
+
+<script type="text/javascript">
+$(function() {
+	$('#gallery a').lightBox();
+});
+</script>
+<% end -%>
+
+<div id="gallery">
+  <% image = @product.images.first unless image || @product.images.empty? %>
+  <% if image %>
+    <a href="/assets/products/<%= image.id %>/original/<%= image.attachment_file_name %>" title="<%= @product.name %>">
+    <%= image_tag image.attachment.url(:product) %>
+    </a>
+  <% else %>
+    <%= image_tag "noimage/product.jpg" %>
+  <% end %>
+</div>
